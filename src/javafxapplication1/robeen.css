@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+.status-red {
+    -fx-background-color:rgba(128,0,0,0.7);
+}
+.status-green {
+    -fx-background-color:rgba(0,140,158,0.7);
+}
+.status-blue {
+    -fx-background-color:rgba(52,56,56,0.7);
+}
+}

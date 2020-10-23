@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="838.0" style="-fx-background-color: #033649;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLController">
+   <children>
+      <ImageView fitHeight="265.0" fitWidth="692.0" layoutX="68.0" layoutY="-52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@aasd_3.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="processtable" layoutX="419.0" layoutY="164.0" opacity="0.98" prefHeight="203.0" prefWidth="308.0" style="-fx-background-color: #C5E65C;">
+        <columns>
+          <TableColumn fx:id="pid" prefWidth="75.0" text="Process#" />
+          <TableColumn fx:id="art" prefWidth="75.0" text="Araival Time" />
+            <TableColumn fx:id="bt" prefWidth="75.0" text="Bourst tiem" />
+            <TableColumn fx:id="dl" prefWidth="75.0" text="Deadline" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <Button layoutX="87.0" layoutY="383.0" mnemonicParsing="false" onAction="#Threaduse" prefHeight="32.0" prefWidth="221.0" style="-fx-background-color: #5b6b26;" text="ALL WITH THREADS" textFill="WHITE" />
+      <TextField fx:id="roben" layoutX="212.0" layoutY="248.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #C5E65C;">
+         <effect>
+            <InnerShadow height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </TextField>
+      <Text fill="#c5e65c" layoutX="98.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roben Constant" />
+      <Button fx:id="Pro" layoutX="87.0" layoutY="279.0" mnemonicParsing="false" onAction="#prio" prefHeight="32.0" prefWidth="221.0" style="-fx-background-color: #036564;" text="Priority with preemption and aging" textFill="WHITE">
+         <effect>
+            <InnerShadow height="1.0" radius="0.0" width="1.0" />
+         </effect>
+      </Button>
+      <Button fx:id="round" layoutX="87.0" layoutY="203.0" mnemonicParsing="false" onAction="#rrb" prefHeight="32.0" prefWidth="221.0" style="-fx-background-color: #036564;" text="Round Roben" textFill="WHITE">
+         <effect>
+            <InnerShadow height="1.0" radius="0.0" width="1.0" />
+         </effect>
+      </Button>
+      <Button layoutX="87.0" layoutY="159.0" mnemonicParsing="false" onAction="#Shrotest" prefHeight="32.0" prefWidth="221.0" style="-fx-background-color: #036564;" text="Shortest Remaining First" textFill="WHITE" />
+      <Button fx:id="add" layoutX="419.0" layoutY="383.0" mnemonicParsing="false" onAction="#addrandom" prefHeight="32.0" prefWidth="308.0" style="-fx-background-color: #031634;" text="Add Random" textFill="WHITE" />
+      <Text fill="#e8591c" layoutX="465.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time limit " wrappingWidth="137.2916603088379" />
+      <Button fx:id="sjf" layoutX="87.0" layoutY="323.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="221.0" style="-fx-background-color: #031634;" text="Shortest Job First" textFill="WHITE" />
+      <Button fx:id="fcfs" layoutX="205.0" layoutY="113.0" mnemonicParsing="false" onAction="#fcfs" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: #031634;" text="FCFS" textFill="WHITE" />
+      <TextField fx:id="timelimit" layoutX="562.0" layoutY="132.0" prefHeight="26.0" prefWidth="144.0" style="-fx-background-color: #C5E65C;">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </TextField>
+      <Button fx:id="lcfs" layoutX="87.0" layoutY="113.0" mnemonicParsing="false" onAction="#lcfs" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: #031634;" text="LCFS" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</AnchorPane>
