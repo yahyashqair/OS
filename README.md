@@ -1,6 +1,6 @@
 # OS
 Operating System Course Project, the aim is to visualize different scheduling algorithms for some processes. 
-I have implement several algorithems such as Round Robin , FCFS , LCFS , Priority ... 
+I have implemented several algorithms such as Round Robin , FCFS , LCFS , Priority ... 
 
 I used Java FXML ( scene builder ) to implement the UI.
 ## Snapshots

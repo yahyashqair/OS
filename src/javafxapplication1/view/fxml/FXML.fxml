@@ -10,18 +10,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="838.0" style="-fx-background-color: #033649;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLController">
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="838.0" style="-fx-background-color: #033649;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.view.controller.FXMLController">
    <children>
       <ImageView fitHeight="265.0" fitWidth="692.0" layoutX="68.0" layoutY="-52.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@aasd_3.png" />
+            <Image url="@../../resources/aasd_3.png" />
          </image>
       </ImageView>
       <TableView fx:id="processtable" layoutX="419.0" layoutY="164.0" opacity="0.98" prefHeight="203.0" prefWidth="308.0" style="-fx-background-color: #C5E65C;">
         <columns>
           <TableColumn fx:id="pid" prefWidth="75.0" text="Process#" />
           <TableColumn fx:id="art" prefWidth="75.0" text="Araival Time" />
-            <TableColumn fx:id="bt" prefWidth="75.0" text="Bourst tiem" />
+            <TableColumn fx:id="bt" prefWidth="75.0" text="Bourst time" />
             <TableColumn fx:id="dl" prefWidth="75.0" text="Deadline" />
         </columns>
          <effect>
